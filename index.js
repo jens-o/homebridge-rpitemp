@@ -47,11 +47,11 @@ RpiTemp.prototype = {
                 return;
         }
 
-        this.log('Sending temp: ' + thus.temperature);
+        this.log('Sending temp: ' + this.temperature);
 
         temperatureService.setCharacteristic(Characteristic.CurrentTemperature, this.temperature);
 
-        callback(null, thhis.temperature);
+        callback(null, this.temperature);
     },
 
     identify: function (callback) {
