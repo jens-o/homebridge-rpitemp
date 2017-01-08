@@ -1,6 +1,6 @@
 # homebridge-rpitemp
 
-Supports https devices on HomeBridge Platform
+Supports Raspberry Pi on HomeBridge Platform
 
 # Installation
 
