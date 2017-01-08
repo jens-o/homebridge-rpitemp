@@ -4,6 +4,8 @@ var temperatureService;
 var temperature = 0;
 var exec = require('child_process').exec;
 
+var tempid = "undef";
+
 module.exports = function (homebridge) {
     Service = homebridge.hap.Service;
     Characteristic = homebridge.hap.Characteristic;
