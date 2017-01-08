@@ -19,7 +19,7 @@ function RpiTemp(log, config) {
     this.manufacturer = config["manufacturer"] || "Jens Manufacturer";
     this.model = config["model"] || "Jens Model";
     this.serial = config["serial"] || "Jens Serial";
-    this.tempid = config["tempid"]
+    this.tempid = config["tempid"] || "undef";
 }
 
 RpiTemp.prototype = {
