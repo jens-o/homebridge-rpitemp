@@ -26,6 +26,7 @@ RpiTemp.prototype = {
 
     getState: function (callback) {
         var that = this;
+        var temp = 0;
 
         switch(this.tempid)
         {
@@ -38,7 +39,7 @@ RpiTemp.prototype = {
                         return;
                     } else {
                         //Divide the response by 1000 to get degrees celsius
-                        that.temperature = parseFloat(stdout)/1000;
+                        temp = parseFloat(stdout)/1000;
                     }
                 });
                 break;
@@ -48,6 +49,8 @@ RpiTemp.prototype = {
                 callback(error);
                 return;
         }
+
+        this.temperature = temp;
 
         this.log('Sending temp: ' + this.temperature);
 
