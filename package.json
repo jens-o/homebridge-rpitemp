@@ -1,0 +1,22 @@
+{
+  "name": "homebridge-rpitemp",
+  "version": "0.1.0",
+  "description": "Homebridge plugin that delivers Raspberry Pi temperatures",
+  "license": "ISC",
+  "keywords": [
+    "homebridge-plugin"
+  ],
+  "engines": {
+    "node": ">=0.12.0",
+    "homebridge": ">=0.2.0"
+  },
+  "author": {
+    "name": "Jens Olsson"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/jens-o/homebridge-rpitemp.git"
+  },
+  "dependencies": {
+  }
+}

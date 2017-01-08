@@ -1,0 +1,20 @@
+{
+    "bridge": {
+        "name": "HomebridgePI",
+        "username": "CD:22:3D:E3:CE:30",
+        "port": 51826,
+        "pin": "031-45-156"
+    },
+    
+    "description": "",
+
+    "platforms": [],
+
+    "accessories": [
+        {
+            "accessory": "homebridge-rpitemp.RpiTemp",
+            "name": "RPi CPU Temp",
+            "tempid": "cpu"
+        }
+    ]
+}
