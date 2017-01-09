@@ -39,6 +39,7 @@ RpiTemp.prototype = {
                     } else {
                         //Divide the response by 1000 to get degrees celsius
                         that.temperature = parseFloat(stdout)/1000;
+                        that.log('Sending temp: ' + that.temperature);
                     }
                 });
                 break;
